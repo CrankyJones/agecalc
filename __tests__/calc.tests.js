@@ -34,25 +34,25 @@ describe('Calculator', () => {
   })
 
   test('Should take age and life expectancy and convert into Mercury equivalent', () => {
-    expect(newMerc.ageConv()).toEqual("Your age on Mercury would be 124, and you have 166 years left to live.")
+    expect(newMerc.ageConv()).toEqual("Your age on Mercury would be 124, and you have 166 year(s) left to live.")
   })
 
   test('Should take age and life expectancy and convert into Venus, Mars, & Jupiter equivalent', () => {
-    expect(newVenus.ageConv()).toEqual("Your age on Venus would be 48, and you have 64 years left to live.")
-    expect(newMars.ageConv()).toEqual("Your age on Mars would be 15, and you have 22 years left to live.")
-    expect(newJup.ageConv()).toEqual("Your age on Jupiter would be 2, and you have 3 years left to live.")
+    expect(newVenus.ageConv()).toEqual("Your age on Venus would be 48, and you have 64 year(s) left to live.")
+    expect(newMars.ageConv()).toEqual("Your age on Mars would be 15, and you have 22 year(s) left to live.")
+    expect(newJup.ageConv()).toEqual("Your age on Jupiter would be 2, and you have 3 year(s) left to live.")
   })
 
 
   test('If age is greater than expectancy, tell them hom many years over they are on Mercury', () =>{
     newMerc.daysAge = 29200;
-    expect(newMerc.ageConv()).toEqual("WHOA, you would be 331 on Mercury and have already lived longer than the life expectancy by 41 years.");
+    expect(newMerc.ageConv()).toEqual("WHOA, you would be 331 on Mercury and have already lived longer than the life expectancy by 41 year(s).");
   })
 
   test('If age is greater than expectancy, tell them hom many years over they are on Venus, Mars, & Jupiter', () =>{
     newAge.daysAge = 29200;
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 129 on Venus and have already lived longer than the life expectancy by 17 years.");
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 42 on Mars and have already lived longer than the life expectancy by 5 years.");
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 6 on Jupiter and have already lived longer than the life expectancy by 1 years.");
+    expect(newAge.ageConv()).toEqual("WHOA, you would be 129 on Venus and have already lived longer than the life expectancy by 17 year(s).");
+    expect(newAge.ageConv()).toEqual("WHOA, you would be 42 on Mars and have already lived longer than the life expectancy by 5 year(s).");
+    expect(newAge.ageConv()).toEqual("WHOA, you would be 6 on Jupiter and have already lived longer than the life expectancy by 1 year(s).");
   })
 })
