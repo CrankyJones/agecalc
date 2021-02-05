@@ -4,15 +4,15 @@ export class Calc {
     this.daysExp = expectancy *365;
   }
 
-  merc() {
+  ageConv() {
     this.Age = Math.floor(this.daysAge / this.conv);
     this.Exp = Math.floor(this.daysExp / this.conv);
     if (this.daysAge > this.daysExp) {
       this.Diff = this.Age - this.Exp;
-      return `WHOA, you would be ${this.Age} on ${Calc.constructor.name} and have already lived longer than the life expectancy by ${this.Diff} years.`;
+      return `WHOA, you would be ${this.Age} on ${this.constructor.name} and have already lived longer than the life expectancy by ${this.Diff} years.`;
     } else {
-      this.Diff = (Math.floor(this.Exp / this.conv)) - this.Age;
-      return `Your age on ${Calc.constructor.name} would be ${this.Age}, and you have ${this.Diff} years left to live.`;
+      this.Diff = Math.floor(this.Exp - this.Age);
+      return `Your age on ${this.constructor.name} would be ${this.Age}, and you have ${this.Diff} years left to live.`;
     };
   };
 
