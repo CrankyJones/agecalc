@@ -9,7 +9,8 @@ export default class Calc {
   }
 
   venu() {
-    
+    this.venuAge = Math.floor(this.daysAge/226.3)
+    return this.venuAge;
   }
 
 }
