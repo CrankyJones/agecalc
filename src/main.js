@@ -1,40 +1,45 @@
-import {Calc , Mercury, Venus, Mars, Jupiter} from './js/calc.js';
+import { Calc, Mercury, Venus, Mars, Jupiter } from './js/calc.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import $ from 'jquery';
 
+$(document).ready(function () {
 
-
-
-
-
-
-$(document).ready(function(){
-  $("#form").click(function(event){
-    event.preventDefault();
+  document.getElementById("mercury").onclick = function () {
     const age = $("#age").val();
     const expect = $("#expect").val();
+    const newAge = new Mercury(age, expect);
+    const results = newAge.ageConv();
+    alert(results);
+    document.getElementById("form").reset();
+  };
 
-    $("#mercury").onclick = function() {
-      const newAge = new Mercury(age, expect);
-      const results = newAge.ageConv();
-      alert(results);
-    }
-    $("#venus").onclick() = function {
-      const newAge = new Venus(age, expect);
-      const results = newAge.ageConv();
-      alert(results);
-    }
-    $("#mars").onclick() function {
-      const newAge = new Mars(age, expect);
-      const results = newAge.ageConv();
-      alert(results);
-    }
-    $("#jupiter").onclick() = function {
-      const newAge = new Jupiter(age, expect);
-      const results = newAge.ageConv();
-    }
+  document.getElementById("venus").onclick = function () {
+    const age = $("#age").val();
+    const expect = $("#expect").val();
+    const newAge = new Venus(age, expect);
+    const results = newAge.ageConv();
+    alert(results);
+    document.getElementById("form").reset();
+  };
 
-  });
+  document.getElementById("mars").onclick = function () {
+    const age = $("#age").val();
+    const expect = $("#expect").val();
+    const newAge = new Mars(age, expect);
+    const results = newAge.ageConv();
+    alert(results);
+    document.getElementById("form").reset();
+  };
+
+  document.getElementById("jupiter").onclick = function () {
+    const age = $("#age").val();
+    const expect = $("#expect").val();
+    const newAge = new Jupiter(age, expect);
+    const results = newAge.ageConv();
+    alert(results);
+    document.getElementById("form").reset();
+  };
+
 });
