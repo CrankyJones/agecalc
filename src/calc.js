@@ -12,16 +12,19 @@ export default class Calc {
 
   venu() {
     this.venuAge = Math.floor(this.daysAge/226.3);
-    return this.venuAge;
+    this.venuExp = (Math.floor(this.daysExp / 226.3)) - this.venuAge;
+    return `Your age on Venus would be ${this.venuAge}, and you have ${this.venuExp} years left to live.`;
   }
 
   mars() {
     this.marsAge = Math.floor(this.daysAge / 686.2);
-    return this.marsAge;
+    this.marsExp = (Math.floor(this.daysExp / 686.2)) - this.marsAge;
+    return `Your age on Mars would be ${this.marsAge}, and you have ${this.marsExp} years left to live.`;
   }
 
   jupi() {
     this.jupiAge = Math.floor(this.daysAge / 4328.9);
-    return this.jupiAge;
+    this.jupiExp = (Math.floor(this.daysExp / 4328.9)) - this.jupiAge;
+    return `Your age on Jupiter would be ${this.jupiAge}, and you have ${this.jupiExp} years left to live.`;
   }
 }
