@@ -1,13 +1,13 @@
 import { Calc, Mercury, Venus, Mars, Jupiter } from '../src/js/calc.js';
 
 describe('Calculator', () => {
-  
+
   let newMerc;
   let newVenus;
   let newMars;
   let newJup;
   beforeEach(() => {
-    newMerc = new Mercury(30 , 70);
+    newMerc = new Mercury(30, 70);
     newVenus = new Venus(30, 70);
     newMars = new Mars(30, 70);
     newJup = new Jupiter(30, 70)
@@ -44,15 +44,17 @@ describe('Calculator', () => {
   })
 
 
-  test('If age is greater than expectancy, tell them hom many years over they are on Mercury', () =>{
+  test('If age is greater than expectancy, tell them hom many years over they are on Mercury', () => {
     newMerc.daysAge = 29200;
     expect(newMerc.ageConv()).toEqual("WHOA, you would be 331 on Mercury and have already lived longer than the life expectancy by 41 year(s).");
   })
 
-  test('If age is greater than expectancy, tell them hom many years over they are on Venus, Mars, & Jupiter', () =>{
-    newAge.daysAge = 29200;
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 129 on Venus and have already lived longer than the life expectancy by 17 year(s).");
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 42 on Mars and have already lived longer than the life expectancy by 5 year(s).");
-    expect(newAge.ageConv()).toEqual("WHOA, you would be 6 on Jupiter and have already lived longer than the life expectancy by 1 year(s).");
+  test('If age is greater than expectancy, tell them hom many years over they are on Venus, Mars, & Jupiter', () => {
+    newVenus.daysAge = 29200;
+    newMars.daysAge = 29200;
+    newJup.daysAge = 29200;
+    expect(newVenus.ageConv()).toEqual("WHOA, you would be 129 on Venus and have already lived longer than the life expectancy by 17 year(s).");
+    expect(newMars.ageConv()).toEqual("WHOA, you would be 42 on Mars and have already lived longer than the life expectancy by 5 year(s).");
+    expect(newJup.ageConv()).toEqual("WHOA, you would be 6 on Jupiter and have already lived longer than the life expectancy by 1 year(s).");
   })
 })
