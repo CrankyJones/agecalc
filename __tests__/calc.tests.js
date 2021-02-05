@@ -9,10 +9,10 @@ describe('Calculator', () => {
 
   })
 
-  // test('Should return the age submitted into Mercury equivalent', () => {
-  //   const age = 31;
-  //   expect(Calc.merc(age)).toEqual(128);
-  // })
+  test('Should return the age submitted into Mercury equivalent', () => {
+    const newAge = new Calc(30);
+    expect(newAge.merc()).toEqual(128);
+  })
 
 
 })

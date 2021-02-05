@@ -1,8 +1,8 @@
-# (Planetary Age Calculator)
+# Planetary Age Calculator
 
 #### (Brief Description of Application)
 
-#### By (Your Name Here)
+#### By Geof Rosenmund
 
 ## Technologies Used
 
