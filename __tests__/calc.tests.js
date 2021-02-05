@@ -19,7 +19,7 @@ describe('Calculator', () => {
   })
 
   test ('Should return the age submitted into the Venus equivalent', () => {
-    expect(newAge.venu()).toEqual();
+    expect(newAge.venu()).toEqual(48);
   })
 
 })
