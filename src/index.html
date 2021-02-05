@@ -5,6 +5,7 @@
   <script type="text/javascript" src="bundle.js"></script>
   <title>Planetary Age Converter</title>
 </head>
+
 <body>
   <div class="container">
     <div class="jumbotron">
@@ -12,20 +13,27 @@
       <h4>Enter your age and life expectancy below!</h4>
       <h4>Then, click the button for corresponding planet!</h4>
     </div>
-  <form id="form">
-    <label for="age">
-      Enter your current age in Earth years:
-    </label>
-    <input id="age" class="form-control" type="number" style="max-width: 40%;">
-    <label for="expect">
-      Enter your life expectancy in Earth years:
-    </label>
-    <input id="expect" class="form-control" type="number" style="max-width: 40%;">
-    <button  id="mercury" class="btn btn-info ">Mercury</button>
-    <button  id="venus" class="btn btn-success">Venus</button>
-    <button  id="mars" class="btn btn-danger">Mars</button>
-    <button  id="jupiter" class="btn btn-warning">Jupiter</button>
-  </form>
-
+    <div class="row">
+      <div class="col-md-6">
+        <form id="form">
+          <label for="age">
+            Enter your current age in Earth years:
+          </label>
+          <input id="age" class="form-control" type="number" style="max-width: 40%;">
+          <label for="expect">
+            Enter your life expectancy in Earth years:
+          </label>
+          <input id="expect" class="form-control" type="number" style="max-width: 40%;">
+          <button id="mercury" class="btn btn-info ">Mercury</button>
+          <button id="venus" class="btn btn-success">Venus</button>
+          <button id="mars" class="btn btn-danger">Mars</button>
+          <button id="jupiter" class="btn btn-warning">Jupiter</button>
+        </form>
+        <div class="col-md-6">
+          <h4 class="resultsWindow"><span id="results"></span></h4>
+        </div>
+      </div>
+    </div>
   </div>
+
 </html>

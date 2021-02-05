@@ -11,7 +11,8 @@ $(document).ready(function () {
     const expect = $("#expect").val();
     const newAge = new Mercury(age, expect);
     const results = newAge.ageConv();
-    alert(results);
+    $("#results").text(results);
+    $(".resultsWindow").show;
     document.getElementById("form").reset();
   };
 
@@ -20,7 +21,8 @@ $(document).ready(function () {
     const expect = $("#expect").val();
     const newAge = new Venus(age, expect);
     const results = newAge.ageConv();
-    alert(results);
+    $("#results").text(results);
+    $(".resultsWindow").show;
     document.getElementById("form").reset();
   };
 
@@ -29,7 +31,8 @@ $(document).ready(function () {
     const expect = $("#expect").val();
     const newAge = new Mars(age, expect);
     const results = newAge.ageConv();
-    alert(results);
+    $("#results").text(results);
+    $(".resultsWindow").show;
     document.getElementById("form").reset();
   };
 
@@ -38,7 +41,8 @@ $(document).ready(function () {
     const expect = $("#expect").val();
     const newAge = new Jupiter(age, expect);
     const results = newAge.ageConv();
-    alert(results);
+    $("#results").text(results);
+    $(".resultsWindow").show;
     document.getElementById("form").reset();
   };
 
