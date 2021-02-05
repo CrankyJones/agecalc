@@ -8,5 +8,8 @@ export default class Calc {
     return this.mercAge;
   }
 
+  venu() {
+    
+  }
 
 }
