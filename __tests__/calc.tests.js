@@ -11,7 +11,7 @@ describe('Calculator', () => {
 
   test('Should return the age submitted into Mercury equivalent', () => {
     const newAge = new Calc(30);
-    expect(newAge.merc()).toEqual(128);
+    expect(newAge.merc()).toEqual(124);
   })
 
 

@@ -4,7 +4,8 @@ export default class Calc {
   }
 
   merc() {
-
+    this.mercAge = Math.floor(this.daysAge / 88);
+    return this.mercAge;
   }
 
 
