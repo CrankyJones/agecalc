@@ -14,7 +14,8 @@ describe('Calculator', () => {
   })
 
   test('Should return the age submitted into Mercury equivalent', () => {
-    expect(newAge.merc()).toEqual(124);
+    newAge.merc();
+    expect(newAge.mercAge).toEqual(124);
   })
 
   test('Should return the age submitted into the Venus equivalent', () => {

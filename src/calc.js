@@ -1,11 +1,13 @@
 export default class Calc {
-  constructor(age) {
+  constructor(age , expectancy) {
     this.daysAge = age * 365;
+    this.daysExp = expectancy *365;
   }
 
   merc() {
     this.mercAge = Math.floor(this.daysAge / 88);
-    return this.mercAge;
+    this.mercExp = (Math.floor(this.daysExp / 88)) - this.mercAge;
+    return `Your age on Mercury would be ${this.mercAge}, and you have ${this.mercExp} years left to live.`;
   }
 
   venu() {
