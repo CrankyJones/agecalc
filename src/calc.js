@@ -13,4 +13,7 @@ export default class Calc {
     return this.venuAge;
   }
 
+  mars() {
+
+  }
 }

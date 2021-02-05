@@ -1,4 +1,3 @@
-import { TestScheduler } from 'jest';
 import Calc from '../src/calc.js';
 
 describe('Calculator', () => {
@@ -9,7 +8,7 @@ describe('Calculator', () => {
     newAge = new Calc(30);
   })
 
-  test ('Should receive an input and multiply that by earth days', () => {
+  test('Should receive an input and multiply that by earth days', () => {
     expect(newAge.daysAge).toEqual(10950)
 
   })
@@ -18,8 +17,13 @@ describe('Calculator', () => {
     expect(newAge.merc()).toEqual(124);
   })
 
-  test ('Should return the age submitted into the Venus equivalent', () => {
+  test('Should return the age submitted into the Venus equivalent', () => {
     expect(newAge.venu()).toEqual(48);
+  })
+
+  test('Should return the age submitted into Mars equivalent', () => {
+    expect(newAge.mars()).toEqual(15);
+
   })
 
 })
