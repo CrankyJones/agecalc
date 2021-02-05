@@ -2,11 +2,15 @@ import { Calc, Mercury, Venus, Mars, Jupiter } from '../src/js/calc.js';
 
 describe('Calculator', () => {
   
+  let newMerc;
+  let newVenus;
+  let newMars;
+  let newJup;
   beforeEach(() => {
-    let newMerc = new Mercury(30 , 70);
-    let newVenus = new Venus(30, 70);
-    let newMars = new Mars(30, 70);
-    let newJup = new Jupiter(30, 70)
+    newMerc = new Mercury(30 , 70);
+    newVenus = new Venus(30, 70);
+    newMars = new Mars(30, 70);
+    newJup = new Jupiter(30, 70)
   })
 
   test('Should receive an input and multiply that by earth days', () => {
@@ -24,9 +28,9 @@ describe('Calculator', () => {
     newVenus.merc();
     newMars.merc();
     newJup.merc();
-    expect(newAge.venuAge).toEqual(48);
-    expect(newAge.marsAge).toEqual(15);
-    expect(newAge.jupiAge).toEqual(2);
+    expect(newVenus.Age).toEqual(48);
+    expect(newMars.Age).toEqual(15);
+    expect(newJup.Age).toEqual(2);
   })
 
   test('Should take age and life expectancy and convert into Mercury equivalent', () => {

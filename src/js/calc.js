@@ -1,5 +1,5 @@
 export class Calc {
-  constructor(age , expectancy, planet) {
+  constructor(age , expectancy) {
     this.daysAge = age * 365;
     this.daysExp = expectancy *365;
   }
@@ -62,18 +62,18 @@ export class Calc {
   export class Venus extends Calc {
   constructor(age, expectancy) {
     super(age, expectancy);
-    this.conv = 88;
+    this.conv = 226.3;
     }
   }
   export class Mars extends Calc {
   constructor(age, expectancy) {
     super(age, expectancy);
-    this.conv = 88;
+    this.conv = 686.2;
     }
   }
   export class Jupiter extends Calc {
   constructor(age, expectancy) {
     super(age, expectancy);
-    this.conv = 88;
+    this.conv = 4328.9;
     }
   }
