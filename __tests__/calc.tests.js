@@ -23,7 +23,10 @@ describe('Calculator', () => {
 
   test('Should return the age submitted into Mars equivalent', () => {
     expect(newAge.mars()).toEqual(15);
-
+    
   })
-
+  
+  test('Should return the age submitted into Jupiter equivalent', () => {
+    expect(newAge.jupi()).toEqual(2);
+  })
 })

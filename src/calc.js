@@ -17,4 +17,8 @@ export default class Calc {
     this.marsAge = Math.floor(this.daysAge / 686.2);
     return this.marsAge;
   }
+
+  jupi() {
+    
+  }
 }
