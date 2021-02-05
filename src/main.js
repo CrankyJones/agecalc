@@ -16,10 +16,24 @@ $(document).ready(function(){
     const age = $("#age").val();
     const expect = $("#expect").val();
 
-    if ($( "#mercury" ).click()) {
+    $("#mercury").onclick = function() {
       const newAge = new Mercury(age, expect);
       const results = newAge.ageConv();
       alert(results);
+    }
+    $("#venus").onclick() = function {
+      const newAge = new Venus(age, expect);
+      const results = newAge.ageConv();
+      alert(results);
+    }
+    $("#mars").onclick() function {
+      const newAge = new Mars(age, expect);
+      const results = newAge.ageConv();
+      alert(results);
+    }
+    $("#jupiter").onclick() = function {
+      const newAge = new Jupiter(age, expect);
+      const results = newAge.ageConv();
     }
 
   });
