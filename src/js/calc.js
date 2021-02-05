@@ -2,19 +2,19 @@ export class Calc {
   constructor(age , expectancy, planet) {
     this.daysAge = age * 365;
     this.daysExp = expectancy *365;
-  };
+  }
 
-  // merc() {
-  //   this.mercAge = Math.floor(this.daysAge / 88);
-  //   this.mercExp = Math.floor(this.daysExp / 88);
-  //   if (this.daysAge > this.daysExp) {
-  //     this.mercDiff = this.mercAge - this.mercExp;
-  //     return `WHOA, you would be ${this.mercAge} on Mercury and have already lived longer than the life expectancy by ${this.mercDiff} years.`;
-  //   } else {
-  //     this.mercDiff = (Math.floor(this.daysExp / 88)) - this.mercAge;
-  //     return `Your age on Mercury would be ${this.mercAge}, and you have ${this.mercDiff} years left to live.`;
-  //   };
-  // };
+  merc() {
+    this.Age = Math.floor(this.daysAge / this.conv);
+    this.Exp = Math.floor(this.daysExp / this.conv);
+    if (this.daysAge > this.daysExp) {
+      this.Diff = this.Age - this.Exp;
+      return `WHOA, you would be ${this.Age} on ${Calc.constructor.name} and have already lived longer than the life expectancy by ${this.Diff} years.`;
+    } else {
+      this.Diff = (Math.floor(this.Exp / this.conv)) - this.Age;
+      return `Your age on ${Calc.constructor.name} would be ${this.Age}, and you have ${this.Diff} years left to live.`;
+    };
+  };
 
   // venu() {
   //   this.venuAge = Math.floor(this.daysAge / 226.3);
@@ -51,6 +51,7 @@ export class Calc {
   //     return `Your age on Jupiter would be ${this.jupiAge}, and you have ${this.jupiExp} years left to live.`;
   //   }
   // }
+};
 
   export class Mercury extends Calc {
   constructor(age, expectancy) {
@@ -76,4 +77,3 @@ export class Calc {
     this.conv = 88;
     }
   }
-}

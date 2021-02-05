@@ -1,27 +1,29 @@
 import { Calc, Mercury, Venus, Mars, Jupiter } from '../src/js/calc.js';
 
 describe('Calculator', () => {
-
-
-  let newAge;
+  
   beforeEach(() => {
-    newAge = new Calc(30 , 70);
+    let newMerc = new Mercury(30 , 70);
+    let newVenus = new Venus(30, 70);
+    let newMars = new Mars(30, 70);
+    let newJup = new Jupiter(30, 70)
   })
 
   test('Should receive an input and multiply that by earth days', () => {
-    expect(newAge.daysAge).toEqual(10950)
+    expect(newMerc.daysAge).toEqual(10950)
 
   })
 
   test('Should return the age submitted into Mercury equivalent', () => {
-    newAge.merc();
-    expect(newAge.mercAge).toEqual(124);
+    newMerc.merc();
+    console.log(newMerc);
+    expect(newMerc.Age).toEqual(124);
   })
 
   test('Should return the age submitted into the Venus, Mars, & Jupiter equivalent', () => {
-    newAge.venu();
-    newAge.mars();
-    newAge.jupi();
+    newVenus.merc();
+    newMars.merc();
+    newJup.merc();
     expect(newAge.venuAge).toEqual(48);
     expect(newAge.marsAge).toEqual(15);
     expect(newAge.jupiAge).toEqual(2);
