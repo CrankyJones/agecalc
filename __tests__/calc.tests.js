@@ -19,19 +19,24 @@ describe('Calculator', () => {
   })
 
   test('Should return the age submitted into the Venus equivalent', () => {
-    expect(newAge.venu()).toEqual(48);
+    newAge.venu();
+    expect(newAge.venuAge).toEqual(48);
   })
 
   test('Should return the age submitted into Mars equivalent', () => {
-    expect(newAge.mars()).toEqual(15);
+    newAge.mars();
+    expect(newAge.marsAge).toEqual(15);
     
   })
   
   test('Should return the age submitted into Jupiter equivalent', () => {
-    expect(newAge.jupi()).toEqual(2);
+    newAge.jupi()
+    expect(newAge.jupiAge).toEqual(2);
   })
 
   test('Should take age and life expectancy and convert into Mercury equivalent', () => {
     expect(newAge.merc()).toEqual("Your age on Mercury would be 124, and you have 166 years left to live.")
   })
+  
+
 })
