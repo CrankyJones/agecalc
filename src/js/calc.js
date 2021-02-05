@@ -13,9 +13,9 @@ export class Calc {
     } else {
       this.Diff = Math.floor(this.Exp - this.Age);
       return `Your age on ${this.constructor.name} would be ${this.Age}, and you have ${this.Diff} year(s) left to live.`;
-    };
-  };
-};
+    }
+  }
+}
 
 export class Mercury extends Calc {
   constructor(age, expectancy) {

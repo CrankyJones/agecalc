@@ -4,4 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import $ from 'jquery';
 
-$(document).ready
+
+$(document).ready(function(){
+  $("#form").click(function(event){
+    event.preventDefault();
+    
+
+
+  })
+})

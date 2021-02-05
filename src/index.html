@@ -3,7 +3,29 @@
 
 <head>
   <script type="text/javascript" src="bundle.js"></script>
+  <title>Planetary Age Converter</title>
 </head>
-
 <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Convert your age to that of your planetary neighbors!</h2>
+      <h4>Enter your age and life expectancy below!</h4>
+      <h4>Then, click the button for corresponding planet!</h4>
+    </div>
+  <form id="form">
+    <label for="age">
+      Enter your current age in Earth years:
+    </label>
+    <input id="age" class="form-control" type="number" style="max-width: 40%;">
+    <label for="expect">
+      Enter your life expectancy in Earth years:
+    </label>
+    <input id="expect" class="form-control" type="number" style="max-width: 40%;">
+    <button onclick="" id="mercury" type="click" class="btn btn-info ">Mercury</button>
+    <button onclick="" id="venus" type="click" class="btn btn-success">Venus</button>
+    <button onclick="" id="mars" type="click" class="btn btn-danger">Mars</button>
+    <button onclick="" id="jupiter" type="click" class="btn btn-warning">Jupiter</button>
+  </form>
+  
+  </div>
 </html>
