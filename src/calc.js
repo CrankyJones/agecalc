@@ -9,11 +9,12 @@ export default class Calc {
   }
 
   venu() {
-    this.venuAge = Math.floor(this.daysAge/226.3)
+    this.venuAge = Math.floor(this.daysAge/226.3);
     return this.venuAge;
   }
 
   mars() {
-
+    this.marsAge = Math.floor(this.daysAge / 686.2);
+    return this.marsAge;
   }
 }
