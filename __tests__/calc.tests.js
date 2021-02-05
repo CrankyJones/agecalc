@@ -40,6 +40,6 @@ describe('Calculator', () => {
 
   test('If age is greater than expectancy, tell them hom many years over they are on Mercury', () =>{
     newAge.daysAge = 29200;
-    expect(newAge.merc()).toEqual("WHOA, you have already lived longer than the life expectancy for Mercury by 41 years");
+    expect(newAge.merc()).toEqual("WHOA, you have already lived longer than the life expectancy for Mercury by 41 years.");
   })
 })

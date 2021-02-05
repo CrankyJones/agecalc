@@ -6,8 +6,14 @@ export default class Calc {
 
   merc() {
     this.mercAge = Math.floor(this.daysAge / 88);
-    this.mercExp = (Math.floor(this.daysExp / 88)) - this.mercAge;
-    return `Your age on Mercury would be ${this.mercAge}, and you have ${this.mercExp} years left to live.`;
+    this.mercExp = Math.floor(this.daysExp / 88);
+    if (this.daysAge > this.daysExp) {
+      this.mercDiff = this.mercAge - this.mercExp;
+      return `WHOA, you have already lived longer than the life expectancy for Mercury by ${this.mercDiff} years.`;
+    } else {
+      this.mercDiff = (Math.floor(this.daysExp / 88)) - this.mercAge;
+      return `Your age on Mercury would be ${this.mercAge}, and you have ${this.mercDiff} years left to live.`;
+    }
   }
 
   venu() {
