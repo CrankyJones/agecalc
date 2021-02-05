@@ -5,7 +5,7 @@ describe('Calculator', () => {
 
   test ('Should receive an input and multiply that by earth days', () => {
     const newAge = new Calc(30);
-    expect(newAge).toEqual(10950)
+    expect(newAge.daysAge).toEqual(10950)
 
   })
 
