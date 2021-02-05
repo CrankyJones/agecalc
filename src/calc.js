@@ -19,6 +19,7 @@ export default class Calc {
   }
 
   jupi() {
-    
+    this.jupiAge = Math.floor(this.daysAge / 4328.9);
+    return this.jupiAge;
   }
 }
