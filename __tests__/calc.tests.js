@@ -42,4 +42,11 @@ describe('Calculator', () => {
     newAge.daysAge = 29200;
     expect(newAge.merc()).toEqual("WHOA, you have already lived longer than the life expectancy for Mercury by 41 years.");
   })
+
+  test('If age is greater than expectancy, tell them hom many years over they are on Venus, Mars, & Jupiter', () =>{
+    newAge.daysAge = 29200;
+    expect(newAge.venu()).toEqual("WHOA, you have already lived longer than the life expectancy for Venus by 41 years.");
+    expect(newAge.mars()).toEqual("WHOA, you have already lived longer than the life expectancy for Mars by 41 years.");
+    expect(newAge.jupi()).toEqual("WHOA, you have already lived longer than the life expectancy for Jupiter by 41 years.");
+  })
 })

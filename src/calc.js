@@ -17,7 +17,7 @@ export default class Calc {
   }
 
   venu() {
-    this.venuAge = Math.floor(this.daysAge/226.3);
+    this.venuAge = Math.floor(this.daysAge / 226.3);
     this.venuExp = (Math.floor(this.daysExp / 226.3)) - this.venuAge;
     return `Your age on Venus would be ${this.venuAge}, and you have ${this.venuExp} years left to live.`;
   }
