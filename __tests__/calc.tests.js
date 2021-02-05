@@ -1,4 +1,4 @@
-import Calc from '../src/calc.js';
+import { Calc, Mercury, Venus, Mars, Jupiter } from '../src/js/calc.js';
 
 describe('Calculator', () => {
 
