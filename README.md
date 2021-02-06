@@ -21,7 +21,7 @@
 * Clone repository to your desktop
 * Move to top level of the directory in your terminal
 * Run [$ npm install] to recreate the environment
-* Run [$npm run build]
+* Run [$ npm run build]
 * Open dist/index.html in a browser
 
 ## GitHub Link
@@ -29,7 +29,7 @@ Repository: https://github.com/CrankyJones/agecalc
 
 ## Known Bugs
 
-* I had issues using CSS. I was able to create a colored border box for the results, but if I hid it and then tried to re-show upon retrieving the results, it would never reappear. It is communicating, because I added a margin to my buttons, But it seems like I cannot do much more.
+* I had issues using CSS. I was able to create a colored border box for the results, but if I hid it and then tried to re-show upon retrieving the results, it would never reappear. It is communicating, because I added a margin to my buttons, But it seems like I cannot do much more in terms of styling the HTML.
 * It should not return values when entering letters because the inputs are for numbers only, but it does not filter out negative numbers. It also brings up results if the inputs are blanks, counting them as 0.
 
 ## License
