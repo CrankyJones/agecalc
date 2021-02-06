@@ -3,10 +3,7 @@
 }
 
 .resultsWindow {
-  display: none;
   border: 10px solid orangered;
   background-color: black;
 }
 
-.results {
-}
