@@ -1,9 +1,18 @@
 .btn{
   margin-top: 15px;
 }
-
+.body {
+  color: aliceblue;
+  background-color: black;
+}
 .resultsWindow {
+  padding: 15px;
   border: 10px solid orangered;
   background-color: black;
+  color: aliceblue;
+}
+
+.resultsDisplay {
+  text-align: center;
 }
 
