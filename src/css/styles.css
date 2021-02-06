@@ -1,17 +1,26 @@
-.btn{
-  margin-top: 15px;
-}
-
-.body {
+body {
   color: aliceblue;
   background-color: black;
 }
 
+.jumbotron{
+  background-color: lightslategrey;
+  text-align: center;
+}
+.btn{
+  margin-top: 15px;
+  color: white;
+  
+}
+.btn:hover{
+  color: white;
+}
 .resultsWindow {
   padding: 15px;
   border: 10px solid orangered;
   background-color: black;
   color: aliceblue;
+  display: none;
 }
 
 .resultsDisplay {

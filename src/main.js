@@ -10,6 +10,7 @@ document.getElementById("mercury").onclick = function () {
   const newAge = new Mercury(age, expect);
   const results = newAge.ageConv();
   $(".resultsDisplay").text(results);
+  $(".resultsWindow").show();
   document.getElementById("form").reset();
 };
 
@@ -19,6 +20,7 @@ document.getElementById("venus").onclick = function () {
   const newAge = new Venus(age, expect);
   const results = newAge.ageConv();
   $(".resultsDisplay").text(results);
+  $(".resultsWindow").show();
   document.getElementById("form").reset();
 };
 
@@ -28,6 +30,7 @@ document.getElementById("mars").onclick = function () {
   const newAge = new Mars(age, expect);
   const results = newAge.ageConv();
   $(".resultsDisplay").text(results);
+  $(".resultsWindow").show();
   document.getElementById("form").reset();
 };
 
@@ -37,6 +40,7 @@ document.getElementById("jupiter").onclick = function () {
   const newAge = new Jupiter(age, expect);
   const results = newAge.ageConv();
   $(".resultsDisplay").text(results);
+  $(".resultsWindow").show();
   document.getElementById("form").reset();
 };
 
