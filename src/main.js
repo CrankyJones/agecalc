@@ -4,8 +4,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-
-
 document.getElementById("mercury").onclick = function () {
   const age = $("#age").val();
   const expect = $("#expect").val();
@@ -37,7 +35,7 @@ document.getElementById("jupiter").onclick = function () {
   const age = $("#age").val();
   const expect = $("#expect").val();
   const newAge = new Jupiter(age, expect);
-  const results = newAge.ageConv(); 
+  const results = newAge.ageConv();
   $(".resultsDisplay").text(results);
   document.getElementById("form").reset();
 };
